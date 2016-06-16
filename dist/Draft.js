@@ -8884,6 +8884,7 @@ var Draft =
 	var ContentBlock = __webpack_require__(8);
 	var ContentState = __webpack_require__(20);
 	var DraftEntity = __webpack_require__(10);
+	var Immutable = __webpack_require__(2);
 
 	var DefaultDraftBlockRenderMap = __webpack_require__(16);
 	var createCharacterList = __webpack_require__(83);
@@ -8891,6 +8892,8 @@ var Draft =
 	var decodeInlineStyleRanges = __webpack_require__(85);
 	var generateRandomKey = __webpack_require__(7);
 	var generateNestedKey = __webpack_require__(11);
+
+	var Map = Immutable.Map;
 
 	function convertBlocksFromRaw(inputBlocks, fromStorageToLocal, blockRenderMap, parentKey, parentBlock) {
 	  return inputBlocks.reduce(function (result, block) {

@@ -15,6 +15,7 @@
 var ContentBlock = require('ContentBlock');
 var ContentState = require('ContentState');
 var DraftEntity = require('DraftEntity');
+var Immutable = require('immutable');
 
 var DefaultDraftBlockRenderMap = require('DefaultDraftBlockRenderMap');
 var createCharacterList = require('createCharacterList');
@@ -26,6 +27,8 @@ const generateNestedKey = require('generateNestedKey');
 import type {RawDraftContentState} from 'RawDraftContentState';
 import type {DraftBlockRenderMap} from 'DraftBlockRenderMap';
 import type {RawDraftContentBlock} from 'RawDraftContentBlock';
+
+var {Map} = Immutable;
 
 function convertBlocksFromRaw(
   inputBlocks: Array<RawDraftContentBlock>,
