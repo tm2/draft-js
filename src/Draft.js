@@ -17,6 +17,8 @@ const CharacterMetadata = require('CharacterMetadata');
 const CompositeDraftDecorator = require('CompositeDraftDecorator');
 const ContentBlock = require('ContentBlock');
 const ContentState = require('ContentState');
+const DefaultDraftBlockRenderMap = require('DefaultDraftBlockRenderMap');
+const DefaultDraftInlineStyle = require('DefaultDraftInlineStyle');
 const DraftEditor = require('DraftEditor.react');
 const DraftEditorBlock = require('DraftEditorBlock.react');
 const DraftModifier = require('DraftModifier');
@@ -25,6 +27,7 @@ const DraftEntityInstance = require('DraftEntityInstance');
 const EditorState = require('EditorState');
 const KeyBindingUtil = require('KeyBindingUtil');
 const RichTextEditorUtil = require('RichTextEditorUtil');
+const NestedTextEditorUtil = require('NestedTextEditorUtil');
 const SelectionState = require('SelectionState');
 
 const convertFromDraftStateToRaw = require('convertFromDraftStateToRaw');
@@ -32,6 +35,7 @@ const convertFromHTMLToContentBlocks =
   require('convertFromHTMLToContentBlocks');
 const convertFromRawToDraftState = require('convertFromRawToDraftState');
 const generateRandomKey = require('generateRandomKey');
+const generateNestedKey = require('generateNestedKey');
 const getDefaultKeyBinding = require('getDefaultKeyBinding');
 const getVisibleSelectionRect = require('getVisibleSelectionRect');
 
@@ -54,11 +58,16 @@ const DraftPublic = {
   KeyBindingUtil,
   Modifier: DraftModifier,
   RichUtils: RichTextEditorUtil,
+  NestedUtils: NestedTextEditorUtil,
+
+  DefaultDraftBlockRenderMap,
+  DefaultDraftInlineStyle,
 
   convertFromHTML: convertFromHTMLToContentBlocks,
   convertFromRaw: convertFromRawToDraftState,
   convertToRaw: convertFromDraftStateToRaw,
   genKey: generateRandomKey,
+  genNestedKey: generateNestedKey,
   getDefaultKeyBinding,
   getVisibleSelectionRect,
 };

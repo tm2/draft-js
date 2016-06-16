@@ -85,12 +85,28 @@ module.exports = {
       "permalink": "docs/advanced-topics-text-direction.html"
     },
     {
+      "id": "api-reference-atomic-block-utils",
+      "title": "AtomicBlockUtils",
+      "layout": "docs",
+      "category": "API Reference",
+      "next": "api-reference-key-binding-util",
+      "permalink": "docs/api-reference-atomic-block-utils.html"
+    },
+    {
       "id": "api-reference-character-metadata",
       "title": "CharacterMetadata",
       "layout": "docs",
       "category": "API Reference",
       "next": "api-reference-entity",
       "permalink": "docs/api-reference-character-metadata.html"
+    },
+    {
+      "id": "api-reference-composite-decorator",
+      "title": "CompositeDecorator",
+      "layout": "docs",
+      "category": "API Reference",
+      "next": "api-reference-data-conversion",
+      "permalink": "docs/api-reference-composite-decorator.html"
     },
     {
       "id": "api-reference-content-block",
@@ -113,7 +129,7 @@ module.exports = {
       "title": "Data Conversion",
       "layout": "docs",
       "category": "API Reference",
-      "next": "api-reference-modifier",
+      "next": "api-reference-rich-utils",
       "permalink": "docs/api-reference-data-conversion.html"
     },
     {
@@ -121,8 +137,16 @@ module.exports = {
       "title": "Editor Component",
       "layout": "docs",
       "category": "API Reference",
-      "next": "api-reference-editor-state",
+      "next": "api-reference-editor-change-type",
       "permalink": "docs/api-reference-editor.html"
+    },
+    {
+      "id": "api-reference-editor-change-type",
+      "title": "EditorChangeType",
+      "layout": "docs",
+      "category": "API Reference",
+      "next": "api-reference-editor-state",
+      "permalink": "docs/api-reference-editor-change-type.html"
     },
     {
       "id": "api-reference-editor-state",
@@ -141,19 +165,44 @@ module.exports = {
       "permalink": "docs/api-reference-entity.html"
     },
     {
+      "id": "api-reference-key-binding-util",
+      "title": "KeyBindingUtil",
+      "layout": "docs",
+      "category": "API Reference",
+      "next": "api-reference-modifier",
+      "permalink": "docs/api-reference-key-binding-util.html"
+    },
+    {
       "id": "api-reference-modifier",
       "title": "Modifier",
       "layout": "docs",
       "category": "API Reference",
-      "permalink": "docs/api-reference-modifier.html"
+      "permalink": "docs/api-reference-modifier.html",
+      "next": "experimental-nesting"
+    },
+    {
+      "id": "api-reference-rich-utils",
+      "title": "RichUtils",
+      "layout": "docs",
+      "category": "API Reference",
+      "next": "api-reference-atomic-block-utils",
+      "permalink": "docs/api-reference-rich-utils.html"
     },
     {
       "id": "api-reference-selection-state",
       "title": "SelectionState",
       "layout": "docs",
       "category": "API Reference",
-      "next": "api-reference-data-conversion",
+      "next": "api-reference-composite-decorator",
       "permalink": "docs/api-reference-selection-state.html"
+    },
+    {
+      "id": "experimental-nesting",
+      "title": "Nesting",
+      "layout": "docs",
+      "category": "Experimental",
+      "next": "api-reference-data-conversion",
+      "permalink": "docs/experimental-nesting.html"
     },
     {
       "id": "getting-started",

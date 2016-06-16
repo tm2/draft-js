@@ -11,7 +11,7 @@
 
 'use strict';
 
-jest.autoMockOff();
+jest.disableAutomock();
 
 var CharacterMetadata = require('CharacterMetadata');
 var ContentBlock = require('ContentBlock');
@@ -72,7 +72,7 @@ describe('ContentBlock', () => {
 
     it('must correctly identify ranges of styles', () => {
       var block = getSampleBlock();
-      var cb = jest.genMockFn();
+      var cb = jest.fn();
       block.findStyleRanges(() => true, cb);
 
       var calls = cb.mock.calls;
@@ -96,7 +96,7 @@ describe('ContentBlock', () => {
 
     it('must correctly identify ranges of entities', () => {
       var block = getSampleBlock();
-      var cb = jest.genMockFn();
+      var cb = jest.fn();
       block.findEntityRanges(() => true, cb);
 
       var calls = cb.mock.calls;
@@ -104,6 +104,31 @@ describe('ContentBlock', () => {
       expect(calls[0]).toEqual([0, 1]);
       expect(calls[1]).toEqual([1, 4]);
       expect(calls[2]).toEqual([4, 5]);
+    });
+  });
+
+  describe('parent key retrieval', () => {
+    it('must properly retrieve key of parent if first level', () => {
+      var block = getSampleBlock();
+      expect(block.getParentKey()).toBe('');
+    });
+
+    it('must properly retrieve key of parent if nested', () => {
+      var block = new ContentBlock({
+        key: 'a/b',
+        type: 'unstyled',
+        text: ''
+      });
+      expect(block.getParentKey()).toBe('a');
+    });
+
+    it('must properly retrieve key of parent if deep nested', () => {
+      var block = new ContentBlock({
+        key: 'a/b/b',
+        type: 'unstyled',
+        text: ''
+      });
+      expect(block.getParentKey()).toBe('a/b');
     });
   });
 });

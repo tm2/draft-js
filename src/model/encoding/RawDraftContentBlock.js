@@ -28,4 +28,5 @@ export type RawDraftContentBlock = {
   inlineStyleRanges: ?Array<InlineStyleRange>;
   entityRanges: ?Array<EntityRange>;
   data: ?Object;
+  blocks: ?Array<RawDraftContentBlock>;
 };

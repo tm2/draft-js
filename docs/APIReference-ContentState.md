@@ -86,6 +86,11 @@ objects.
     </a>
   </li>
   <li>
+    <a href="#getfirstblock">
+      <pre>getFirstBlock()</pre>
+    </a>
+  </li>
+  <li>
     <a href="#getlastblock">
       <pre>getLastBlock()</pre>
     </a>
@@ -225,8 +230,7 @@ the first key.
 ```
 getBlockAfter(key: string): ?ContentBlock
 ```
-Returns the `ContentBlock` after the specified key in `blockMap`, or null if this is
-the last key.
+Returns the `ContentBlock` after the specified key in `blockMap`, or null if this is the last key.
 
 ### getBlocksAsArray()
 
@@ -234,6 +238,22 @@ the last key.
 getBlocksAsArray(): Array<ContentBlock>
 ```
 Returns the values of `blockMap` as an array.
+
+You generally won't need to use this method, since `getBlockMap` provides an `OrderedMap` that you should use for iteration.
+
+### getFirstBlock()
+
+```
+getFirstBlock(): ContentBlock
+```
+Returns the first `ContentBlock`.
+
+### getLastBlock()
+
+```
+getLastBlock(): ContentBlock
+```
+Returns the last `ContentBlock`.
 
 ### getPlainText()
 

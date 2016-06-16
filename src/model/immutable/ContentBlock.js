@@ -77,6 +77,24 @@ class ContentBlock extends ContentBlockRecord {
     return this.get('data');
   }
 
+  getParentKey(): string {
+    var key = this.getKey();
+    var parts = key.split('/');
+
+    return parts.slice(0, -1).join('/');
+  }
+
+  hasParent(): boolean {
+    return (this.getParentKey() !== '');
+  }
+
+  getInnerKey(): string {
+    var key = this.getKey();
+    var parts = key.split('/');
+
+    return parts[parts.length - 1];
+  }
+
   getInlineStyleAt(offset: number): DraftInlineStyle {
     var character = this.getCharacterList().get(offset);
     return character ? character.getStyle() : EMPTY_SET;

@@ -27,7 +27,6 @@ export type DraftBlockType = (
   'unordered-list-item' |
   'ordered-list-item' |
   'blockquote' |
-  'pullquote' |
   'code-block' |
   'atomic'
 );

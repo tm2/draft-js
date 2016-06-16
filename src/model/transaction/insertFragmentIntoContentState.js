@@ -15,9 +15,10 @@
 
 var BlockMapBuilder = require('BlockMapBuilder');
 
-var generateRandomKey = require('generateRandomKey');
 var insertIntoList = require('insertIntoList');
 var invariant = require('invariant');
+
+var randomizeBlockMapKeys = require('randomizeBlockMapKeys');
 
 import type {BlockMap} from 'BlockMap';
 import type ContentState from 'ContentState';
@@ -26,7 +27,7 @@ import type SelectionState from 'SelectionState';
 function insertFragmentIntoContentState(
   contentState: ContentState,
   selectionState: SelectionState,
-  fragment: BlockMap
+  fragmentBlockMap: BlockMap
 ): ContentState {
   invariant(
     selectionState.isCollapsed(),
@@ -37,6 +38,11 @@ function insertFragmentIntoContentState(
   var targetOffset = selectionState.getStartOffset();
 
   var blockMap = contentState.getBlockMap();
+
+  // we need to make sure that the fragment have unique keys
+  // that would not clash with the blockMap, so we need to
+  // generate new set of keys for all nested elements
+  var fragment = randomizeBlockMapKeys(fragmentBlockMap);
 
   var fragmentSize = fragment.size;
   var finalKey;
@@ -100,6 +106,7 @@ function insertFragmentIntoContentState(
       var modifiedHead = block.merge({
         text: headText + appendToHead.getText(),
         characterList: headCharacters.concat(appendToHead.getCharacterList()),
+        type: headText ? block.getType() : appendToHead.getType(),
       });
 
       newBlockArr.push(modifiedHead);
@@ -107,7 +114,7 @@ function insertFragmentIntoContentState(
       // Insert fragment blocks after the head and before the tail.
       fragment.slice(1, fragmentSize - 1).forEach(
         fragmentBlock => {
-          newBlockArr.push(fragmentBlock.set('key', generateRandomKey()));
+          newBlockArr.push(fragmentBlock);
         }
       );
 
@@ -115,10 +122,9 @@ function insertFragmentIntoContentState(
       var tailText = text.slice(targetOffset, blockSize);
       var tailCharacters = chars.slice(targetOffset, blockSize);
       var prependToTail = fragment.last();
-      finalKey = generateRandomKey();
+      finalKey = prependToTail.getKey();
 
       var modifiedTail = prependToTail.merge({
-        key: finalKey,
         text: prependToTail.getText() + tailText,
         characterList: prependToTail
           .getCharacterList()
