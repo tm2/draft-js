@@ -40,13 +40,15 @@ class DraftEditorBlocks extends React.Component {
       blockRendererFn,
       blockStyleFn,
       customStyleMap,
-      blocksAsArray,
+      blockMap,
+      blockMapTree,
       selection,
       forceSelection,
       decorator,
       directionMap,
       getBlockTree,
-      getBlockChildren
+      getBlockChildren,
+      getBlockDescendants
     } = this.props;
 
     const blocks = [];
@@ -54,10 +56,9 @@ class DraftEditorBlocks extends React.Component {
     let currentWrapperTemplate = null;
     let currentDepth = null;
     let currentWrappedBlocks;
-    let block, key, blockType, child, childProps, wrapperTemplate;
+    let key, blockType, child, childProps, wrapperTemplate;
 
-    for (let ii = 0; ii < blocksAsArray.length; ii++) {
-      block = blocksAsArray[ii];
+    blockMap.forEach((block) => {
       key = block.getKey();
       blockType = block.getType();
 
@@ -71,6 +72,8 @@ class DraftEditorBlocks extends React.Component {
 
       const direction = directionMap.get(key);
       const offsetKey = DraftOffsetKey.encode(key, 0, 0);
+      const blockChildren = blockMapTree.getIn([key, 'firstLevelBlocks']);
+
       const componentProps = {
         block,
         blockProps: customProps,
@@ -85,9 +88,11 @@ class DraftEditorBlocks extends React.Component {
         blockRenderMap,
         blockRendererFn,
         blockStyleFn,
-        blocksAsArray,
+        blockMapTree,
+        blockMap: blockChildren,
         getBlockTree,
         getBlockChildren,
+        getBlockDescendants,
         DraftEditorBlocks: DraftEditorBlocks,
         tree: getBlockTree(key)
       };
@@ -167,7 +172,7 @@ class DraftEditorBlocks extends React.Component {
         currentDepth = null;
         blocks.push(child);
       }
-    }
+    });
 
     const dataContents = type === 'contents' ? true : null;
     const dataBlocks = dataContents ? null : true;

@@ -39,6 +39,7 @@ const SCROLL_BUFFER = 10;
 
 type Props = {
   block: ContentBlock,
+  blockMapTree: Object,
   customStyleMap: Object,
   tree: List<any>,
   selection: SelectionState,
@@ -61,20 +62,14 @@ class DraftEditorBlock extends React.Component {
     const {
         block,
         direction,
-        getBlockChildren,
-        tree
+        blockMapTree,
+        tree,
     } = this.props;
 
-    const nestedBlocks = (
-      getBlockChildren ?
-        getBlockChildren(block.getKey()) :
-        false
-    );
-
-    const hasNestedBlocks = nestedBlocks && nestedBlocks.size;
+    const key = block.getKey();
 
     return (
-      hasNestedBlocks ||
+      blockMapTree.getIn([key, 'childrenBlocks']) !== nextProps.blockMapTree.getIn([key, 'childrenBlocks']) ||
       block !== nextProps.block ||
       tree !== nextProps.tree ||
       direction !== nextProps.direction ||
@@ -214,24 +209,22 @@ class DraftEditorBlock extends React.Component {
     blocks: BlockMap
   ): React.Element {
     var DraftEditorBlocks = this.props.DraftEditorBlocks;
-    return <DraftEditorBlocks {...this.props} blocksAsArray={blocks.valueSeq().toArray()} />;
+    return <DraftEditorBlocks {...this.props} blockMap={blocks} />;
   }
 
   render(): React.Element<any> {
-    const {direction, offsetKey, getBlockChildren, block} = this.props;
+    const {direction, offsetKey, blockMap} = this.props;
     const className = cx({
       'public/DraftStyleDefault/block': true,
       'public/DraftStyleDefault/ltr': direction === 'LTR',
       'public/DraftStyleDefault/rtl': direction === 'RTL',
     });
 
-    const nestedBlocks = getBlockChildren ? getBlockChildren(block.getKey()) : [];
-
     // Render nested blocks or text but never both at the same time.
     return (
       <div data-offset-key={offsetKey} className={className}>
-        {nestedBlocks && nestedBlocks.size && nestedBlocks.size > 0 ?
-          this._renderBlockMap(nestedBlocks) :
+        {blockMap && blockMap.size && blockMap.size > 0 ?
+          this._renderBlockMap(blockMap) :
           this._renderChildren()
         }
       </div>
