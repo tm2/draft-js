@@ -2334,6 +2334,7 @@ var Draft =
 	      return this.getBlockMap().reverse().reduce(function (treeMap, block) {
 	        var key = block.getKey();
 	        var parentKey = block.getParentKey();
+	        var rootKey = '__ROOT__';
 
 	        // create one if does not exist
 	        var blockList = treeMap.get(key) ? treeMap : treeMap.set(key, new Immutable.Map({
@@ -2352,19 +2353,28 @@ var Draft =
 	          var addBlockToParentList = parentList.setIn([parentKey, 'firstLevelBlocks', key], block);
 	          var addGrandChildren = addBlockToParentList.setIn([parentKey, 'childrenBlocks'], addBlockToParentList.getIn([parentKey, 'childrenBlocks']).add(
 	          // we include all the current block children and itself
-	          addBlockToParentList.getIn([key, 'firstLevelBlocks']).set(key, block)));
+	          addBlockToParentList.getIn([key, 'childrenBlocks']).add(block)));
 
 	          return addGrandChildren;
 	        } else {
-	          // Since the iteration is done backwards, we either have no children or
-	          // we already have all children's defined, we should now revert back the order
-	          // since we are doing a reversed loop
-	          var currentBlock = blockList.getIn([key, 'firstLevelBlocks']);
+	          // we are root level block
+	          // lets create a new key called firstLevelBlocks
+	          var rootLevelBlocks = blockList.get(rootKey) ? blockList : blockList.set(rootKey, new Immutable.Map({
+	            firstLevelBlocks: new Immutable.OrderedMap(),
+	            childrenBlocks: new Immutable.Set()
+	          }));
 
-	          // we reverse it back since we will use this to create our blocks
-	          return blockList.setIn([key, 'firstLevelBlocks'], currentBlock.reverse());
+	          var rootFirstLevelBlocks = rootLevelBlocks.setIn([rootKey, 'firstLevelBlocks', key], block);
+
+	          var addToRootChildren = rootFirstLevelBlocks.setIn([rootKey, 'childrenBlocks'], rootFirstLevelBlocks.getIn([rootKey, 'childrenBlocks']).add(
+	          // we include all the current block children and itself
+	          rootFirstLevelBlocks.getIn([key, 'childrenBlocks']).add(block)));
+
+	          return addToRootChildren;
 	        }
-	      }, new Immutable.Map());
+	      }, new Immutable.Map()).map(function (block) {
+	        return block.set('firstLevelBlocks', block.get('firstLevelBlocks').reverse());
+	      });
 	    }
 	  }, {
 	    key: 'getBlockChildren',
@@ -6989,8 +6999,8 @@ var Draft =
 	      var forceSelection = editorState.mustForceSelection();
 	      var decorator = editorState.getDecorator();
 	      var directionMap = nullthrows(editorState.getDirectionMap());
-	      var blockMap = content.getFirstLevelBlocks();
 	      var blockMapTree = content.getBlockDescendants();
+	      var blockMap = blockMapTree.getIn(['__ROOT__', 'firstLevelBlocks']);
 
 	      return React.createElement(DraftEditorBlocks, {
 	        type: 'contents',
