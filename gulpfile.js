@@ -192,5 +192,5 @@ gulp.task('dev', function() {
 });
 
 gulp.task('default', function(cb) {
-  runSequence('check-dependencies', 'clean', 'modules', ['dist', 'dist:min'], cb);
+  runSequence('clean', 'modules', ['dist', 'dist:min'], cb);
 });

@@ -143,7 +143,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule EditorState
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -792,7 +792,7 @@ var Draft =
 	 *
 	 * @providesModule DraftModifier
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -938,7 +938,7 @@ var Draft =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	var nullthrows = function nullthrows(x) {
@@ -964,7 +964,7 @@ var Draft =
 	 *
 	 * @providesModule CharacterMetadata
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1086,7 +1086,7 @@ var Draft =
 	 *
 	 * @providesModule generateRandomKey
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1119,7 +1119,7 @@ var Draft =
 	 *
 	 * @providesModule ContentBlock
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1525,7 +1525,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEntity
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1626,7 +1626,7 @@ var Draft =
 	 *
 	 * @providesModule generateNestedKey
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1883,7 +1883,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule BlockMapBuilder
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -1916,7 +1916,7 @@ var Draft =
 	 *
 	 * @providesModule SelectionState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2070,7 +2070,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DefaultDraftBlockRenderMap
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2154,7 +2154,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule removeTextWithStrategy
-	 * 
+	 *
 	 */
 
 	/**
@@ -2254,7 +2254,7 @@ var Draft =
 	 *
 	 * @providesModule ContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 	'use strict';
 
@@ -2487,7 +2487,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DraftOffsetKey
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2533,7 +2533,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule findRangesImmutable
-	 * 
+	 *
 	 */
 
 	/**
@@ -2581,7 +2581,7 @@ var Draft =
 	 *
 	 * @providesModule getContentStateFragment
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2659,7 +2659,7 @@ var Draft =
 	 *
 	 * @providesModule KeyBindingUtil
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2703,7 +2703,7 @@ var Draft =
 	 *
 	 * @providesModule findAncestorOffsetKey
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2741,7 +2741,7 @@ var Draft =
 	 *
 	 * @providesModule getEntityKeyForSelection
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -2802,7 +2802,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule moveSelectionBackward
-	 * 
+	 *
 	 */
 
 	/**
@@ -2859,7 +2859,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule sanitizeDraftText
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -2994,7 +2994,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -3108,7 +3108,7 @@ var Draft =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	function makeEmptyFunction(arg) {
@@ -3202,7 +3202,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule BlockTree
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3318,7 +3318,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DefaultDraftInlineStyle
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3360,7 +3360,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorBlock.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3590,7 +3590,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DraftEntityInstance
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3670,7 +3670,7 @@ var Draft =
 	 *
 	 * @providesModule DraftRemovableWord
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3726,7 +3726,7 @@ var Draft =
 	 *
 	 * @providesModule DraftStringKey
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -3757,7 +3757,7 @@ var Draft =
 	 *
 	 * @providesModule convertFromHTMLToContentBlocks
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4269,7 +4269,7 @@ var Draft =
 	 *
 	 * @providesModule getDefaultKeyBinding
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4396,7 +4396,7 @@ var Draft =
 	 *
 	 * @providesModule getDraftEditorSelectionWithNodes
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4583,7 +4583,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getFragmentFromSelection
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4613,7 +4613,7 @@ var Draft =
 	 *
 	 * @providesModule getRangeClientRects
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4678,7 +4678,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getSafeBodyFromHTML
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4719,7 +4719,7 @@ var Draft =
 	 *
 	 * @providesModule getSelectionOffsetKeyForNode
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4746,7 +4746,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getTextContentFromFiles
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4827,7 +4827,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule getUpdatedSelectionState
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -4907,7 +4907,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule insertIntoList
-	 * 
+	 *
 	 */
 
 	/**
@@ -4948,7 +4948,7 @@ var Draft =
 	 *
 	 * @providesModule isSelectionAtLeafStart
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -5001,7 +5001,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule moveSelectionForward
-	 * 
+	 *
 	 */
 
 	/**
@@ -5051,7 +5051,7 @@ var Draft =
 	 *
 	 * @providesModule randomizeBlockMapKeys
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/*
@@ -5100,7 +5100,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule removeEntitiesAtEdges
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -5523,7 +5523,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -5685,7 +5685,7 @@ var Draft =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	var isTextNode = __webpack_require__(139);
@@ -5768,7 +5768,7 @@ var Draft =
 	 *
 	 * @providesModule AtomicBlockUtils
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -5845,7 +5845,7 @@ var Draft =
 	 *
 	 * @providesModule CompositeDraftDecorator
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -5968,7 +5968,7 @@ var Draft =
 	 *
 	 * @providesModule ContentStateInlineStyle
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -6046,7 +6046,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditor.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -6513,7 +6513,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorBlocks.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -6740,7 +6740,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DraftEditorCompositionHandler
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -6909,7 +6909,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorContents.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7040,7 +7040,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorDragHandler
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -7161,7 +7161,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule DraftEditorEditHandler
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7210,7 +7210,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorLeaf.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7391,7 +7391,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorPlaceholder.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7472,7 +7472,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEditorTextNode.react
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7591,7 +7591,7 @@ var Draft =
 	 *
 	 * @providesModule DraftEntitySegments
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -7695,7 +7695,7 @@ var Draft =
 	 *
 	 * @providesModule DraftPasteProcessor
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7746,7 +7746,7 @@ var Draft =
 	 *
 	 * @providesModule EditorBidiService
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -7798,7 +7798,7 @@ var Draft =
 	 *
 	 * @providesModule NestedTextEditorUtil
 	 * @typechecks
-	 * 
+	 *
 	 */
 	'use strict';
 
@@ -7834,6 +7834,7 @@ var Draft =
 	  DefaultBlockRenderMap: DefaultBlockRenderMap,
 
 	  toggleBlockType: function toggleBlockType(editorState, blockType) {
+			debugger
 	    var blockRenderMap = arguments.length <= 2 || arguments[2] === undefined ? NestedTextEditorUtil.DefaultBlockRenderMap : arguments[2];
 
 	    var contentState = editorState.getCurrentContent();
@@ -8259,7 +8260,7 @@ var Draft =
 	 *
 	 * @providesModule RichTextEditorUtil
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8570,7 +8571,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule SecondaryClipboard
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8645,7 +8646,7 @@ var Draft =
 	 *
 	 * @providesModule adjustBlockDepthForContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8689,7 +8690,7 @@ var Draft =
 	 *
 	 * @providesModule applyEntityToContentBlock
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8721,7 +8722,7 @@ var Draft =
 	 *
 	 * @providesModule applyEntityToContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8769,7 +8770,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule convertFromDraftStateToRaw
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8857,7 +8858,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule convertFromRawToDraftState
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8879,6 +8880,7 @@ var Draft =
 	var Map = Immutable.Map;
 
 	function convertBlocksFromRaw(inputBlocks, fromStorageToLocal, blockRenderMap, parentKey, parentBlock) {
+		debugger
 	  return inputBlocks.reduce(function (result, block) {
 	    var key = block.key;
 	    var type = block.type;
@@ -8898,7 +8900,9 @@ var Draft =
 	    blocks = blocks || [];
 	    data = Map(data);
 
-	    key = parentKey && parentBlockRenderingConfig && parentBlockRenderingConfig.nestingEnabled ? generateNestedKey(parentKey, key) : key;
+	    //key = parentKey && parentBlockRenderingConfig && parentBlockRenderingConfig.nestingEnabled ? generateNestedKey(parentKey, key) : key;
+			debugger
+			key = parentKey ? generateNestedKey(parentKey, key) : key
 
 	    var inlineStyles = decodeInlineStyleRanges(text, inlineStyleRanges);
 
@@ -8913,7 +8917,7 @@ var Draft =
 	    var characterList = createCharacterList(inlineStyles, entities);
 
 	    // Push parent block first
-	    result.push(new ContentBlock({ key: key, type: type, text: text, depth: depth, characterList: characterList, data: data }));
+	    result.push(new ContentBlock({ key: key, type: type, text: text, depth: depth, characterList: characterList, data: data, blocks:childBlocks }));
 
 	    // Then push child blocks
 	    result = result.concat(convertBlocksFromRaw(blocks, fromStorageToLocal, blockRenderMap, key, block));
@@ -8923,6 +8927,7 @@ var Draft =
 	}
 
 	function convertFromRawToDraftState(rawState) {
+		debugger
 	  var blockRenderMap = arguments.length <= 1 || arguments[1] === undefined ? DefaultDraftBlockRenderMap : arguments[1];
 	  var blocks = rawState.blocks;
 	  var entityMap = rawState.entityMap;
@@ -8958,7 +8963,7 @@ var Draft =
 	 *
 	 * @providesModule createCharacterList
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -8992,7 +8997,7 @@ var Draft =
 	 *
 	 * @providesModule decodeEntityRanges
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9036,7 +9041,7 @@ var Draft =
 	 *
 	 * @providesModule decodeInlineStyleRanges
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9083,7 +9088,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnBeforeInput
-	 * 
+	 *
 	 */
 
 	// When nothing is focused, Firefox regards two characters, `'` and `/`, as
@@ -9206,7 +9211,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnBlur
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9256,7 +9261,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnCompositionStart
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9288,7 +9293,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnCopy
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9328,7 +9333,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnCut
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9406,7 +9411,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnDragOver
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9435,7 +9440,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnDragStart
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9463,7 +9468,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnFocus
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9504,7 +9509,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnInput
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9651,7 +9656,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnKeyDown
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9802,7 +9807,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnPaste
-	 * 
+	 *
 	 */
 
 	/**
@@ -9948,7 +9953,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule editOnSelect
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -9993,7 +9998,7 @@ var Draft =
 	 *
 	 * @providesModule encodeEntityRanges
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10038,7 +10043,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule encodeInlineStyleRanges
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10112,7 +10117,7 @@ var Draft =
 	 *
 	 * @providesModule expandRangeToStartOfLine
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10306,7 +10311,7 @@ var Draft =
 	 *
 	 * @providesModule getCharacterRemovalRange
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -10388,7 +10393,7 @@ var Draft =
 	 *
 	 * @providesModule getDraftEditorSelection
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -10430,7 +10435,7 @@ var Draft =
 	 *
 	 * @providesModule getRangeBoundingClientRect
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10498,7 +10503,7 @@ var Draft =
 	 *
 	 * @providesModule getRangesForDraftEntity
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -10542,7 +10547,7 @@ var Draft =
 	 *
 	 * @providesModule getVisibleSelectionRect
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -10593,7 +10598,7 @@ var Draft =
 	 *
 	 * @providesModule insertFragmentIntoContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10726,7 +10731,7 @@ var Draft =
 	 *
 	 * @providesModule insertTextIntoContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10783,7 +10788,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandBackspaceToStartOfLine
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10832,7 +10837,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandBackspaceWord
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10884,7 +10889,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandDeleteWord
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10934,7 +10939,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandInsertNewline
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -10962,7 +10967,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandMoveSelectionToEndOfBlock
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11004,7 +11009,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandMoveSelectionToStartOfBlock
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11046,7 +11051,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandPlainBackspace
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11095,7 +11100,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandPlainDelete
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11145,7 +11150,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandTransposeCharacters
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11228,7 +11233,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule keyCommandUndo
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11282,7 +11287,7 @@ var Draft =
 	 *
 	 * @providesModule modifyBlockForContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11325,7 +11330,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule removeRangeFromContentState
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11446,7 +11451,7 @@ var Draft =
 	 *
 	 * @providesModule setDraftEditorSelection
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -11585,7 +11590,7 @@ var Draft =
 	 *
 	 * @providesModule splitBlockInContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11659,7 +11664,7 @@ var Draft =
 	 *
 	 * @providesModule splitBlockWithNestingInContentState
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11752,7 +11757,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule splitTextIntoTextBlocks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11812,7 +11817,7 @@ var Draft =
 	 *
 	 * @typechecks
 	 * @stub
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11852,7 +11857,7 @@ var Draft =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -11888,7 +11893,7 @@ var Draft =
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/**
@@ -12880,7 +12885,7 @@ var Draft =
 	   * LICENSE file in the root directory of this source tree. An additional grant
 	   * of patent rights can be found in the PATENTS file in the same directory.
 	   *
-	   * 
+	   *
 	   * @typechecks
 	   */
 
@@ -13123,7 +13128,7 @@ var Draft =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * 
+	 *
 	 * @typechecks static-only
 	 */
 
@@ -13685,7 +13690,7 @@ var Draft =
 	            /(alcatel|geeksphone|huawei|lenovo|nexian|panasonic|(?=;\s)sony)[_\s-]?([\w-]+)*/i
 	                                                                                // Alcatel/GeeksPhone/Huawei/Lenovo/Nexian/Panasonic/Sony
 	            ], [VENDOR, [MODEL, /_/g, ' '], [TYPE, MOBILE]], [
-	                
+
 	            /(nexus\s9)/i                                                       // HTC Nexus 9
 	            ], [MODEL, [VENDOR, 'HTC'], [TYPE, TABLET]], [
 
@@ -13807,7 +13812,7 @@ var Draft =
 	            ], [VENDOR, MODEL, [TYPE, MOBILE]], [
 	            /(i-STYLE2.1)/i                                                     // i-mobile i-STYLE 2.1
 	            ], [[MODEL, 'i-STYLE 2.1'], [VENDOR, 'i-mobile'], [TYPE, MOBILE]], [
-	            
+
 	            /(mobiistar touch LAI 512)/i                                        // mobiistar touch LAI 512
 	            ], [[MODEL, 'Touch LAI 512'], [VENDOR, 'mobiistar'], [TYPE, MOBILE]], [
 
@@ -14009,7 +14014,7 @@ var Draft =
 	    }
 
 	    // jQuery/Zepto specific (optional)
-	    // Note: 
+	    // Note:
 	    //   In AMD env the global scope should be kept clean, but jQuery is an exception.
 	    //   jQuery always exports to global scope, unless jQuery.noConflict(true) is used,
 	    //   and we should catch that.

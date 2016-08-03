@@ -54,6 +54,8 @@ function convertBlocksFromRaw(
         blockRenderMap.get(parentBlock.type) :
         null;
 
+      debugger
+
       key = key || generateRandomKey();
       depth = depth || 0;
       inlineStyleRanges = inlineStyleRanges || [];

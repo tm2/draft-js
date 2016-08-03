@@ -212,6 +212,20 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           this._setHTMLContent(htmlContent);
         }
 
+        onConvert () {
+          let {editorState} = this.state
+          let d = Draft
+          let n = NestedUtils
+          console.log(n)
+          console.log(d)
+          let raw = convertToRaw(editorState.getCurrentContent())
+          console.log(raw)
+          debugger
+          let content = convertFromRaw(raw)
+          console.log(content)
+          console.log(convertToRaw(content))
+        }
+
         render() {
           const {editorState, blockRenderMap} = this.state;
 
@@ -246,6 +260,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                   Add Video
                 </button>
               </div>
+              <button onClick={this.onConvert.bind(this)}>Convert</button>
               <div className={className} onClick={this.focus}>
                 <Editor
                   blockRenderMap={blockRenderMap}
